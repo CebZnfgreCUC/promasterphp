@@ -6,15 +6,15 @@ const mongo = require("mongoose");
 mongo.connect("mongodb://192.168.1.104:27017/bot10", { useNewUrlParser: true });
 
 const QIWI = require("node-qiwi-api").Qiwi;
-const wallet = new QIWI("cc9be19607011ac88721bfa08a9d4ea8");
-const admin = "@BotmakerAdmiH";
-const comment = "moneybot";
-const qiwi = "+992933020192";
-const chat = "@chatofmoneybot";
-const tasksChannel = "@channelofmoneybot";
-const video_url = "https://youtube.com/watch?v=Icmhg5F3_lY";
-const bot_chat = "Easyaction_bot";
-const admins = [450662740, 397233553];
+const wallet = new QIWI("353daafe6c000237b36eec053cf99267");
+const admin = "@OnlineWolf";
+const comment = "Лучший заработок бот";
+const qiwi = "+998905352214";
+const chat = "@TXqiwibot";
+const tasksChannel = "@TXqiwi";
+const video_url = "null";
+const bot_chat = "TXqiwi_bot";
+const admins = [503177249,1070846128];
 
 const User = mongo.model("User", new mongo.Schema({
     id: Number,
@@ -67,7 +67,7 @@ const Ban = mongo.model("Ban", new mongo.Schema({
 
 const Telegram = require("node-telegram-bot-api");
 const bot = new Telegram(
-    "868597724:AAFwsJPhoDSQI1nryy0cmNWhFKhOSdlopgE",
+    "1267921253:AAGn7izTdMpUP7HXpmLWtzBTa_RXU1SugC0",
     {polling: true}
 );
 
